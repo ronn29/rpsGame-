@@ -1,4 +1,4 @@
-//Rock Peper Scissor Game made by ronn29
+//Rock Paper Scissor Game made by ronn29
 import java.util.Scanner;
 import java.util.Random;
 
