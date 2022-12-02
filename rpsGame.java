@@ -1,5 +1,4 @@
-
-
+//Rock Peper Scissor Game made by ronn29
 import java.util.Scanner;
 import java.util.Random;
 
@@ -8,6 +7,8 @@ public class rpsGame {
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
         int max = 3;
+
+
         String enemyWep = "ENEMY CHOOSE : ";
         String r = "ROCK";
         String s = "SCISSOR";
@@ -23,7 +24,7 @@ public class rpsGame {
         System.out.print("CHOOSE YOUR WEAPON : ");
         String wep = scan.nextLine();
 
-        if(wep.equalsIgnoreCase(r)){
+        if(wep.equalsIgnoreCase(r) || (wep.equalsIgnoreCase("r"))){
             int rand = random.nextInt(max);
             if(rand == 0) {
                 System.out.println(enemyWep + r);
@@ -36,7 +37,7 @@ public class rpsGame {
                 System.out.println(lose);
             }
 
-        }else if(wep.equalsIgnoreCase(s)){
+        }else if(wep.equalsIgnoreCase(s) || (wep.equalsIgnoreCase("s"))){
             int rand = random.nextInt(max);
             if(rand == 0) {
                 System.out.println(enemyWep + r);
@@ -49,7 +50,7 @@ public class rpsGame {
                 System.out.println(won);
             }
 
-        }else if(wep.equalsIgnoreCase(p)){
+        }else if(wep.equalsIgnoreCase(p) || (wep.equalsIgnoreCase("p"))){
             int rand = random.nextInt(max);
             if(rand == 0) {
                 System.out.println(enemyWep + r);
